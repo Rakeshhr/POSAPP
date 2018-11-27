@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+
+<tiles-definitions>  
+ 
+   
+   <definition name="base-definition-login" template="/WEB-INF/views/tiles/layouts/defaultLoginLayout.jsp">  
+       <put-attribute name="body" value="" />  
+   </definition> 
+   
+
+   <definition name="login" extends="base-definition-login">
+       
+       <put-attribute name="title" value="Login Page" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/login.jsp" />
+       
+   </definition>   
+ 
+   <!-- Base Definition -->
+   <definition name="base-definition" 
+       template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />  
+   </definition>  
+   
+   <definition name="base-definition-1" 
+       template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />  
+       <put-attribute name="menu" value="" />
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />  
+   </definition> 
+ 
+   <!-- Home Page -->
+   <definition name="home" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />  
+   </definition>  
+   
+   <definition name="signup" extends="base-definition-login">  
+       <put-attribute name="title" value="CreateUser" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/signup.jsp" />  
+   </definition>
+   
+   <definition name="users" extends="base-definition">  
+       <put-attribute name="title" value="User" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/users.jsp" />  
+   </definition>
+   <definition name="taxes" extends="base-definition">  
+       <put-attribute name="title" value="Tax" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/taxes.jsp" />  
+   </definition>
+	<definition name="menu" extends="base-definition">  
+       <put-attribute name="title" value="Menu" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/menu.jsp" />  
+   </definition>
+   <definition name="menumaster" extends="base-definition">  
+       <put-attribute name="title" value="MenuMaster" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/menumaster.jsp" />  
+   </definition>
+   <definition name="l1menu" extends="base-definition">  
+       <put-attribute name="title" value="l1menu" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/l1menu.jsp" />  
+   </definition>
+   <definition name="l2menu" extends="base-definition">  
+       <put-attribute name="title" value="l2menu" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/l2menu.jsp" />  
+   </definition>
+   <definition name="establishment" extends="base-definition">  
+       <put-attribute name="title" value="establishment" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/establishment.jsp" />  
+   </definition>
+   <definition name="floor" extends="base-definition">  
+       <put-attribute name="title" value="floor" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/floor.jsp" />  
+   </definition>
+    <definition name="table" extends="base-definition">  
+       <put-attribute name="title" value="table" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/table.jsp" />  
+   </definition>
+
+   <definition name="l3menu" extends="base-definition">  
+       <put-attribute name="title" value="l3menu" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/l3menu.jsp" />  
+   </definition>
+   
+   <definition name="poshome" extends="base-definition-1">  
+       <put-attribute name="title" value="poshome" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/poshome.jsp" />  
+   </definition>
+   
+   <definition name="ajaxtest" extends="base-definition-1">  
+       <put-attribute name="title" value="poshome" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/ajaxtest.jsp" />  
+   </definition>
+  
+  <definition name="testajax" extends="base-definition-1">  
+       <put-attribute name="title" value="poshome" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/testajax.jsp" />  
+   </definition>
+   <definition name="posfloor" extends="base-definition-1">  
+       <put-attribute name="title" value="posfloor" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/posfloor.jsp" />  
+   </definition>
+   <definition name="postable" extends="base-definition-1">  
+       <put-attribute name="title" value="postable" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/postable.jsp" />  
+   </definition>
+   <definition name="posorder" extends="base-definition-1">  
+       <put-attribute name="title" value="posorder" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/posorder.jsp" />  
+   </definition>
+</tiles-definitions>
